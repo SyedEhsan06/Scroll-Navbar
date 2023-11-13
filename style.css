@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 500vh;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.leftbar {
+    background: rgb(51, 51, 51);
+    width: 200px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; 
+}
+
+.btn-container {
+    margin: 10px 0;
+    width: 100%; 
+}
+.btn {
+    background-color: rgb(51, 52, 51);
+    color: white;
+    border: none;
+    text-align: left;
+padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px tomato; 
+}
+
+.middle {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add additional styling for the sections if needed */
+.sectionclass{
+    background: gray;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 1px solid white;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the active button differently */
+.btn:active {
+    background-color: yellow    ;
+}
+.active{
+    background-color: white;
+    border: black;
+    color: black;
+    box-shadow: 0 0 10px tomato;
+
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(51, 51, 51);
+}
